@@ -1,0 +1,91 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+* {
+    box-sizing: border-box;
+}
+@media(min-width:400px) {
+    .container {
+        width: 375px;
+    }
+}
+/* ---------- */
+.design {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px 1px #396c9457;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.image img {
+    max-width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.text {
+    padding: 20px;
+    text-align: center;
+}
+.text h1 {
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 10px;
+}
+.text p {
+    color: hsl(224, 23%, 55%);
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+    background-color: hsla(225, 100%, 94%, 0.493);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    
+}
+.card .annual-plan {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.card .annual-plan p:nth-child(2) {
+    color:hsl(224, 23%, 55%);
+}
+a {
+    align-self: center;
+}
+.submit {
+    height: 45px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 5px 25px 0px #0000ff5e;
+    color: white;
+}
+.submit:hover {
+    background-color: hsl(291deg 64% 42% / 93%);
+    box-shadow: 0px 5px 25px 0px hsl(291deg 64% 42% / 93%);
+}
+.clear {
+    height: 45px;
+    border: none;
+    margin: 0px 20px 20px;
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+}
+.clear:hover {
+    color: hsl(291deg 64% 42% / 93%);
+}
+a:hover {
+    color: hsl(291deg 64% 42% / 93%);
+    text-decoration: none;
+}
